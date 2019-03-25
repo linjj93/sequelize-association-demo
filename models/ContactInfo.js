@@ -9,7 +9,7 @@ module.exports = (sequelize, type) => {
   );
 
   ContactInfo.associate = models => {
-    ContactInfo.belongsTo(models.Student);
+    //key association here
   };
 
   return ContactInfo;

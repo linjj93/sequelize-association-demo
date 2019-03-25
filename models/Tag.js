@@ -9,7 +9,7 @@ module.exports = (sequelize, type) => {
   );
 
   Tag.associate = models => {
-    Tag.belongsToMany(models.Blog, { through: "blog_tag" });
+    //key association here
   };
 
   return Tag;

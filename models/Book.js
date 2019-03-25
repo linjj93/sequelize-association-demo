@@ -9,7 +9,7 @@ module.exports = (sequelize, type) => {
   );
 
   Book.associate = models => {
-    Book.belongsTo(models.Author);
+    //key association here
   };
 
   return Book;
