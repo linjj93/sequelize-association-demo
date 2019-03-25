@@ -28,7 +28,7 @@ const createStudentsAndContactInfo = async () => {
     {
       name: "Deborah R Marrero",
       contactinfo: {
-        address: "226 Ferguson Stree 12244"
+        address: "226 Ferguson Street 12244"
       }
     },
     { include: [ContactInfo] }
