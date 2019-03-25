@@ -1,10 +1,8 @@
 const { Student, ContactInfo, sequelize } = require("../../models");
-const {createStudentsAndContactInfo} = require("../../seed")
 
 describe("One to One Association", () => {
   beforeAll(async ()=> {
     await sequelize.sync({force: true});
-    await createStudentsAndContactInfo();
   });
 
   afterAll(async ()=> {

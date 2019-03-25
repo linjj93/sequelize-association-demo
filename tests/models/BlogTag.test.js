@@ -1,10 +1,8 @@
 const { Blog, Tag, sequelize } = require("../../models");
-const { createBlogsAndTags } = require("../../seed");
 
 describe("Many to Many Association", () => {
   beforeAll(async () => {
     await sequelize.sync({ force: true });
-    await createBlogsAndTags();
   });
 
   afterAll(async () => {

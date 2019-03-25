@@ -1,5 +1,4 @@
 const { Author, Book, sequelize } = require("../../models");
-const { createAuthorsAndBooks } = require("../../seed");
 
 describe("One to Many Association", () => {
   const printMagicMethods = modelInstance => {
@@ -13,7 +12,6 @@ describe("One to Many Association", () => {
   describe("Book belongsTo Author", () => {
     beforeAll(async () => {
       await sequelize.sync({ force: true });
-      await createAuthorsAndBooks();
     });
 
     test("getAuthor() returns books's author", async () => {});
