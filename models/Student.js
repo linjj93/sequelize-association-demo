@@ -10,6 +10,7 @@ module.exports = (sequelize, type) => {
 
   Student.associate = models => {
     //key association here
+    Student.hasOne(models.ContactInfo);
   };
 
   return Student;

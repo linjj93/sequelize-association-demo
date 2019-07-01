@@ -10,6 +10,7 @@ module.exports = (sequelize, type) => {
 
   Author.associate = models => {
     //key association here
+    Author.hasMany(models.Book);
   };
 
   return Author;

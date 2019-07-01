@@ -1,7 +1,7 @@
 const Sequelize = require("sequelize");
 
 //configure connection
-const sequelize = new Sequelize("sequelize_demo", "postgres", "", {
+const sequelize = new Sequelize("sequelize_demo", "postgres", "jinjia423!", {
   dialect: "postgres",
   logging: false
 });
@@ -13,7 +13,7 @@ const models = {
   Book: sequelize.import("./Book"),
   Author: sequelize.import("./Author"),
   Tag: sequelize.import("./Tag"),
-  Blog: sequelize.import("./Blog"),
+  Blog: sequelize.import("./Blog")
 };
 
 //Link up all models
